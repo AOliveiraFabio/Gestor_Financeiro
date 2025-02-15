@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Sora", serif;
+}
+
+body{
+    font-weight: 250;
+    font-style: normal;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);  
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    font-size: 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 8px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    background: rgb(43, 43, 43);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    height: 50px;
+}
+
+nav {
+    padding-top: 15px;
+}
+
+.navigation button{
+    font-size: 16px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.navigation a {
+    font-style: normal;
+    position: relative;
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+.navigation .btnLogin {
+    width: 130px;    
+    height: 36px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;    
+    color: #fff;
+    margin-left: 40px;
+}
+
+button:hover {
+    background-color: #00040e; 
+    color: rgb(255, 255, 255);
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    transition: 0.5s;    
+}
+
+.wrapper {
+    position: relative;
+    margin-top: 65px;
+    width: 400px;
+    height: 430px;
+    background-color: rgb(43, 43, 43);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2 ease;
+}
+
+.wrapper.active {
+    height: 480px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2 {
+    font-size: 2.4em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.wrapper .label-login {  
+    padding-top: 13px;
+    font-size: 0.95em;
+    padding-bottom: 5px;
+    padding-left: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .input-box {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .input-box input{
+    text-align: center;
+    width: 220px;
+    height: 25px;
+    border: none;   
+    border-radius: 3px;
+}
+
+.wrapper .remember-forgot {
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    padding-top: 13px;
+    padding-left: 45px;
+}
+
+.wrapper .remember-forgot input {
+    cursor: pointer;
+}
+
+.wrapper .remember-forgot p{
+    padding-top: 3px;
+}
+
+.wrapper .remember-forgot a {
+    color: #72d2ff;
+    text-decoration: none;
+}
+
+.wrapper .remember-forgot a:hover {
+    color: #0db2ff;
+    transition: 0.3s;
+}
+
+.wrapper .main-button {
+    background: rgb(255, 255, 255);
+    color: #000000;
+    width: 170px;
+    height: 25px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;   
+}
+
+.main-button:hover{
+    background-color: #00040e; 
+    color: rgb(255, 255, 255);
+    border: solid 1px #ffffff;
+    border-radius: 3px;
+    transition: 0.5s;    
+}
+
+.wrapper .login-register {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.wrapper .login-register p {
+    padding-top: 3px;
+}
+
+.wrapper .login-register a{
+    color: #72d2ff;
+    text-decoration: none;
+}
+
+.wrapper .login-register a:hover {
+    color: #0db2ff;
+    transition: 0.3s;
+}
+
+.wrapper .label-register {
+    padding-bottom: 5px;
+}
+
+.wrapper .brands {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1.2em; 
+}
+
+.wrapper .brands a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper .brands a:hover {
+    color: rgb(80, 185, 255);
+    transition: 0.3s;   
+}
+
+.form-box .icon {
+    margin-left: 0.5em;
+    color: #ffffff;
+}
+
+.wrapper .label-register {
+    padding-top: 13px;
+    font-size: 0.95em;
+    padding-left: 45px;
+    color: white;
+}
+
+.wrapper button{
+    cursor: pointer;
+}
+
+.wrapper .main-checkbox input{
+    cursor: pointer;
+}
