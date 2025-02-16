@@ -9,3 +9,16 @@ registerLink.addEventListener('click', ()=> {
 loginLink.addEventListener('click', ()=> {
     wrapper.classList.remove('active');
 })
+
+function ShowPassword(){
+    var inputPass = document.getElementById('input-password')
+    var btnShowPass = document.getElementById('btn-password')
+
+    if(inputPass.type === 'password'){
+        inputPass.setAttribute('type','text')
+        btnShowPass.classList.replace('fa-eye','fa-eye-slash')
+    }else{
+        inputPass.setAttribute('type','password')
+        btnShowPass.classList.replace('fa-eye-slash','fa-eye')
+    }
+}

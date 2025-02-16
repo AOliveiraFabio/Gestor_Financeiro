@@ -33,10 +33,17 @@
                     <div class="icon"><i class="fa-solid fa-user"></i></div>
                 </div>
     
-                <p class="label-login">Senha</p>    
-                <div class="input-box">
-                    <input type="password" placeholder="Senha" required> 
-                    <div class="icon"><i class="fa-solid fa-lock"></i></div>                                   
+                <div class="input-password">
+                    <p class="label-login">Senha</p>    
+                    <div class="input-box">
+                        <input type="password" placeholder="Senha" required id="input-password"> 
+                        <div class="eye-icon">
+                            <i class="fa-solid fa-eye" id="btn-password" onclick="ShowPassword()"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>                                   
+                    </div>
                 </div>
 
                 <div class="remember-forgot">
