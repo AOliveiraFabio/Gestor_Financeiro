@@ -74,7 +74,7 @@ nav {
 }
 
 button:hover {
-    background-color: #00040e; 
+    background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     border: solid 1px #ffffff;
     border-radius: 3px;
@@ -211,7 +211,7 @@ button:hover {
 }
 
 .main-button:hover{
-    background-color: #00040e; 
+    background-color: rgb(31, 31, 31);
     color: rgb(255, 255, 255);
     border: solid 1px #ffffff;
     border-radius: 3px;
